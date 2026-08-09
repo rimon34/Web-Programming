@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>create a from</title>
+</head>
+<body>
+    <h1>Tech Fest 2026 — Registration</h1>
+    <p>Dept. of Computer Science & Engineering, BAUET</p>
+    <hr>
+    <form>
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="n">Full name:</label><br>
+            <input type="text" id="n" placeholder="Full name"><br><br>
+            <label for="e">Institutional Email:</label><br>
+            <input type="email" id="e" placeholder="Email"><br><br>
+            <legend>Phone Number (11 digits):</legend>
+            <input type="number" placeholder="01712345677"><br><br>
+            <label for="i">Student ID (9 digits):</label><br>
+            <input type="number" id="i"><br>
+        </fieldset>
+    </form>
+    <form>
+        <fieldset>
+            <legend>Event Registration</legend>
+            <h3>Participant Category:</h3>
+            <input type="radio">
+            <label>Undergraduate</label><br>
+            <input type="radio">
+            <label>Postgraduate</label><br>
+            <input type="radio">
+            <label>Faculty / Industry</label><br>
+            <h3>Events (select all that apply):</h3>
+            <input type="checkbox">
+            <label>Hackathon</label><br>
+            <input type="checkbox">
+            <label>Poster Presentation</label><br>
+            <input type="checkbox">
+            <label>Gaming Contest</label><br>
+            <input type="checkbox">
+            <label>Robo Race</label><br>
+            <label>T-Shirt Size:</label><br>
+            <select>
+                <option value="">--Select--</option>
+                <option>s</option>
+                <option>M</option>
+                <option>L</option>
+                <option>XL</option>
+                <option>XXL</option>
+            </select>
+        </fieldset>
+    </form>
+    <form>
+        <fieldset>
+            <legend>Additional Details</legend>
+            <lebel>Payment Receipt (PDF or PNG):</lebel><br>
+            <input type="file" placeholder="choose file"><br><br>
+            <label>Special Requirements / Dietary Notes:</label><br>
+            <textarea placeholder="Leave blank if none"></textarea>
+        </fieldset>
+    </form>
+    <br>
+    <button>submit Registration</button>
+    <button>clear From</button><br>
+    <hr>
+     <p>Deadline: 5 August 2026 — BAUET Tech Fest Committee</p>
+</body>
+</html>
