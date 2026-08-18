@@ -1,0 +1,229 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    background: #f4f1e9;
+    color: #3d3932;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 11px;
+}
+
+.container {
+    width: 100%;
+    max-width: 650px;
+    margin: auto;
+}
+
+
+.header {
+    background: #f7f5ee;
+    border: 1px solid #c9c4b8;
+    border-radius: 5px;
+    text-align: center;
+    padding: 22px 20px 18px;
+    margin-bottom: 18px;
+}
+
+.pizza-icon {
+    width: 48px;
+    height: 48px;
+    margin: 0 auto 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #8b493c;
+    border-radius: 50%;
+
+    background: #e9e2d8;
+    color: #7c4539;
+
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+}
+
+h1 {
+    margin: 0 0 7px;
+    color: #191714;
+    font-size: 23px;
+}
+
+.subtitle {
+    margin: 0 0 14px;
+    color: #777168;
+    font-style: italic;
+    font-size: 11px;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    gap: 22px;
+
+    color: #777168;
+    font-family: Arial, sans-serif;
+    font-size: 9px;
+}
+
+
+.card {
+    background: #f7f5ee;
+    border: 1px solid #c9c4b8;
+    border-radius: 5px;
+
+    padding: 17px 20px;
+    margin-bottom: 16px;
+}
+
+h2 {
+    margin: 0 0 12px;
+
+    color: #75483d;
+    font-size: 15px;
+
+    border-bottom: 1px solid #d0cbc0;
+    padding-bottom: 7px;
+}
+
+.card p {
+    line-height: 1.5;
+}
+
+
+.ingredients {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 40px;
+}
+
+.ingredients p {
+    margin: 0 0 10px;
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+}
+
+
+
+.instructions {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    counter-reset: recipe;
+}
+
+.instructions li {
+    position: relative;
+
+    padding-left: 28px;
+    margin-bottom: 12px;
+
+    line-height: 1.45;
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+}
+
+.instructions li::before {
+    counter-increment: recipe;
+    content: counter(recipe);
+
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    width: 18px;
+    height: 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #80493c;
+    color: white;
+
+    border-radius: 50%;
+
+    font-weight: bold;
+    font-size: 9px;
+}
+
+.instructions strong {
+    color: #654137;
+}
+
+
+
+.tip {
+    margin-top: 14px;
+    padding: 12px;
+
+    background: #eef0e7;
+    border: 1px solid #b9c0aa;
+    border-radius: 4px;
+
+    line-height: 1.5;
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+}
+
+
+
+.nutrition {
+    margin: 0;
+    padding-left: 18px;
+
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+}
+
+.nutrition li {
+    margin-bottom: 8px;
+}
+
+
+
+footer {
+    text-align: center;
+
+    border-top: 1px solid #c9c4b8;
+
+    padding: 14px 0 5px;
+
+    color: #888278;
+
+    font-family: Arial, sans-serif;
+    font-size: 8px;
+}
+
+footer p {
+    margin: 4px 0;
+}
+
+
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .ingredients {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .info {
+        gap: 10px;
+    }
+
+    .card {
+        padding: 15px;
+    }
+}
